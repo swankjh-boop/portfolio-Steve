@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+
+    <!-- 흰 큰 카드 -->
+    <section class="sheet">
+
+      <!-- 왼쪽: ABOUT ME -->
+      <aside class="about">
+        <p class="label">ABOUT ME</p>
+
+        <div class="photo" id="photo"></div>
+
+        <h1 class="name" id="name">불러오는 중...</h1>
+        <p class="job" id="job"></p>
+        <p class="badge" id="badge" hidden></p>
+
+        <ul class="contacts">
+          <li>
+            <span class="icon-dot">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+            </span>
+            <span><small>이름</small><b id="c-name"></b></span>
+          </li>
+          <li>
+            <span class="icon-dot">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            </span>
+            <span><small>이메일</small><b id="c-email"></b></span>
+          </li>
+          <li>
+            <span class="icon-dot">
+              <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+            </span>
+            <span><small>연락처</small><b id="c-phone"></b></span>
+          </li>
+          <li>
+            <span class="icon-dot">
+              <svg viewBox="0 0 24 24"><path d="M12 22s7-7.2 7-12a7 7 0 0 0-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </span>
+            <span><small>위치</small><b id="c-location"></b></span>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- 오른쪽: PORTFOLIO -->
+      <div class="content">
+        <h2 class="big-title">PORTFOLIO</h2>
+
+        <p class="headline" id="headline"></p>
+        <p class="intro" id="intro"></p>
+
+        <div class="info-grid">
+          <div class="info">
+            <h3>
+              <svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+              EDUCATION
+            </h3>
+            <p id="education"></p>
+          </div>
+          <div class="info">
+            <h3>
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
+              SKILLS &amp; TOOLS
+            </h3>
+            <p id="skills"></p>
+          </div>
+          <div class="info">
+            <h3>
+              <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>
+              EXPERIENCE
+            </h3>
+            <p id="experience"></p>
+          </div>
+        </div>
+
+        <div class="highlights">
+          <h3 class="box-title">PORTFOLIO HIGHLIGHTS</h3>
+          <div class="cards" id="cards">
+            <p class="empty">불러오는 중...</p>
+          </div>
+        </div>
+
+        <blockquote class="quote" id="quote" hidden></blockquote>
+      </div>
+    </section>
+
+    <!-- 방명록 상자 -->
+    <section class="sheet guestbook">
+      <h2 class="big-title">GUESTBOOK</h2>
+      <p class="intro">한마디 남겨 주세요. 남긴 글은 맨 위에 나타나요.</p>
+
+      <div class="gb-form">
+        <input id="gb-nickname" type="text" maxlength="20" placeholder="별명 (20자까지)">
+        <input id="gb-message" type="text" maxlength="200" placeholder="한마디 (200자까지)">
+        <button type="button" id="gb-submit">남기기</button>
+      </div>
+      <p class="gb-status" id="gb-status"></p>
+
+      <ul class="gb-list" id="gb-list">
+        <li class="empty">불러오는 중...</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
